@@ -1,0 +1,96 @@
+.cart-items {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: crimson;
+    padding: 0 1px;
+    border-radius: 40%;
+    color: white;
+}
+
+.cart {
+    position: relative;
+}
+
+#catalog {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    grid-gap: 10px;
+}
+
+#catalog .box {
+    border: 1px solid black;
+    margin: 2px;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 200px;
+    width: 300px;
+}
+
+#catalog .box img {
+    height: 100px;
+    width: 120px;
+    display: block;
+}
+
+#catalog .box:hover {
+    opacity: 0.5;
+    border: 3px solid black;
+}
+
+#catalog .box h4 {
+    font-family: "Signika", sans-serif;
+    font-size: 17px;
+    text-align: left;
+    padding-top: 1rem;
+}
+
+#catalog .box h5 {
+    color: darkred;
+}
+
+#catalog .box {
+    position: relative;
+}
+
+#catalog .box div .price-span {
+    float: left;
+}
+
+#catalog .box div .btn2 {
+    float: right;
+}
+
+#catalog .box .btn {
+    /* position: absolute;
+    right: 0;
+    bottom: 15px;
+     */
+    text-align: center;
+}
+
+/* basket */
+
+#basket {
+    border: 2px solid black;
+    height: 800px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.product {
+    visibility: hidden;
+}
+
+.products-container {
+    visibility: hidden;
+}
+
+#catalog {
+    margin-left: 40px;
+    
+}
+
+.form-control {
+    margin-top: 30px;
+}

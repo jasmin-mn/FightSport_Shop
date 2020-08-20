@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Signika&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand " href="#"> FIGHT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar">
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link pay" href="pay.html">pay</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link cart" href="cart.html"><i class="fas fa-cart-plus"></i> <span
+                            class="cart-items">0</span> </a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link t-total" href="#"> <span>0</span><i class="fas fa-euro-sign"></i></a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="products-container ">
+
+
+
+        <div class="products">
+
+        </div>
+    </div>
+
+    <div class="page-header">
+       
+        <div class="form-group">
+            <span class="control-label">filter Categories</span>
+            <select class="form-control" id="category" onchange="catalogBinder()">
+
+                <option> </option>
+            </select>
+        </div>
+
+    </div>
+
+  
+    <div id="catalog">
+
+
+    </div>
+
+
+    <script src="category.js"></script>
+
+
+
+
+
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+
+</html>
