@@ -381,7 +381,7 @@ function catalogBinder() {
     
      const currentCategory = document.getElementById("category").value;
 
-    console.log(12, currentCategory);
+    
 
     if (currentCategory === 'All') {
         items = [];
@@ -406,6 +406,10 @@ function catalogBinder() {
     if (items.length > 0) {
         showCatalog(items);
     } else if (currentCategory !== "please choose") {
+        let catalog = document.getElementById("catalog");
+        catalog.innerHTML=""
+
+        
         let notfound = document.createElement("h4");
         notfound.textContent = "there is no product in this category"
         notfound.classList = "alert alert-danger"  // use bootstrap class
@@ -439,7 +443,7 @@ function showCatalog(product) {
         box.appendChild(image);
         catalog.appendChild(box);
         let name = document.createElement("h4");
-        name.innerText = product[i].name;            //take the name key  from the single Object
+        name.innerText = product[i].name;            
         box.appendChild(name);
         price = document.createElement("div");
         let span = document.createElement("span");
@@ -699,15 +703,16 @@ function updateCartTotal() {
     localStorage.setItem("totalCost", total);
    
 
-     let totalCostNav = localStorage.getItem("totalCost");
-    const totalnav= document.querySelector(".t-total span")
-   if(totalnav!=null){
-         totalnav.textContent = totalCostNav;
-   }
-     
+ 
+    let totalCostNav = localStorage.getItem("totalCost");
+    const totalnav = document.querySelector(".t-total span")
+    if (totalnav != null) {
+        totalnav.textContent = totalCostNav;
+    }
 
-    
+
 }
+
 
 
 //change quantity 
