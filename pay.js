@@ -43,7 +43,7 @@ if(namecard.value==""){
 
         
 
-     alert("please include a valid Email address")
+    //  alert("please include a valid Email address")
 
     return false 
 
