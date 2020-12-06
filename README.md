@@ -1,6 +1,6 @@
 # FightSport_Shop
 
-this is a Shopping Website for martial arts.I am using the localStorage /Javascript/Html/CSS/Bootstrap on this project.
+this is a Shopping Website for martial arts.I am using the localStorage /Javascript/Html/CSS/Bootstrap for this project.
   How it works?
 1:choose one category ,add your products into the cart
 2:click on the cart
